@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Delivery</title>
+</head>
+<body>
+    <h1>Welcome to Food Delivery Service</h1>
+
+    <form action="/make_order" method="post">
+        <label for="customer_name">Your Name:</label>
+        <input type="text" name="customer_name" required>
+
+        <label for="items">Items (comma-separated):</label>
+        <input type="text" name="items" required>
+
+        <label for="total_price">Total Price:</label>
+        <input type="number" name="total_price" step="0.01" required>
+
+        <button type="submit">Place Order</button>
+    </form>
+</body>
+</html>
